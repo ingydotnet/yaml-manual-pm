@@ -12,7 +12,7 @@ DESCRIPTION
 
 TABLE OF CONTENTS
     This manual is divided up into many POD files. Here is a top level view
-    of the contents of this manual.
+    of the contents of this manual:
 
     YAML::Manual::Intro - Introduction to YAML in Perl.
     YAML::Manual::Modules - Comparison of the YAML Perl modules.

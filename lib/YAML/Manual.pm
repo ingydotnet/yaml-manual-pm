@@ -25,7 +25,7 @@ in Perl and beyond.
 =head1 TABLE OF CONTENTS
 
 This manual is divided up into many POD files. Here is a top level view
-of the contents of this manual.
+of the contents of this manual:
 
 =over
 
