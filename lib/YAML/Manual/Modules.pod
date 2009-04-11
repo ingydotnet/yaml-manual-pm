@@ -6,7 +6,54 @@ YAML::Manual::Modules - Comparison of the YAML Perl modules
 
 =head1 INTRODUCTION
 
-This manual section has not yet been written.
+For a seemingly simple serialization language, there are a lot of Perl
+modules around to do things with YAML. This manual goes through all of
+the modules and explains them at a very high level view. The modules can
+be categorized into 3 main groups: B<Implementation Modules>, B<Support
+Modules> and B<Bonus Modules>.
+
+=head1 IMPLEMENTATION MODULES
+
+These are the modules that one usually thinks of, when listing YAML
+modules. They include modules like L<YAML::XS>.
+
+=head2 L<YAML.pm>
+
+YAML.pm was the first Perl YAML implementation module. It pioneered the
+ubiquitous YAML Dump/Load API.
+
+In 2009, the old YAML.pm code was retired as the module YAML::Old. For
+more information on the code, see the L<YAML::Old> section below.
+
+The new purpose of YAML.pm is to be the interface module that sits in
+front of the various implementations and provides a nice, clean and
+consistent API.
+
+You can either use a specific implementation directly or use any
+implementation module that is on the system via YAML.pm, depending on
+your situation.
+
+=head2 L<YAML::XS>
+
+YAML::XS is a Perl/XS binding to Kirill Siminov's C<libyaml>, which is
+one of the most solid pieces of software I have had the pleasure of
+working with. YAML::XS is distributed on CPAN under the package name
+YAML-LibYAML. This may seem confusing, but YAML::XS is a better module
+name, and YAML-LibYAML gives credit to the working end of the code. It's
+a decent compromise.
+
+=head1 SUPPORT MODULES
+
+These are the modules that encapulate that make up all the parts of an
+implementation suite. They include modules like C<YAML::Loader> and
+C<YAML::Node>. Not all of the support modules are detailed here. There
+are too many. Just the ones you might actually encounter in your
+everyday programming are covered.
+
+=head1 BONUS MODULES
+
+These are YAML related modules that are not directly related to Perl
+serialization. They include modules like L<YAML::Shell>.
 
 =head1 AUTHOR
 
